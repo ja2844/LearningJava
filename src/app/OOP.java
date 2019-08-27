@@ -15,8 +15,7 @@ class Taxi extends Car{
     public Taxi(String n, int s,String C) {
         super(n, s);
         company = C;
-        // TODO Auto-generated constructor stub
-    }
+        }
 
     public String company;
 }
