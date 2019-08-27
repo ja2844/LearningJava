@@ -3,7 +3,7 @@ package app;
 class Car{
     public String name;
     public int speed;
-    Car(String n,int s){
+    public Car(String n,int s){
         name = n;
         speed = s;
     }
@@ -11,11 +11,22 @@ class Car{
         return name;
     }
 }
+class Taxi extends Car{
+    public Taxi(String n, int s,String C) {
+        super(n, s);
+        company = C;
+        // TODO Auto-generated constructor stub
+    }
+
+    public String company;
+}
 public class OOP{
   
     public static void main(String[] args) {
         Car A = new Car("ABC", 123);
-       System.out.println(A.getName());
+        Taxi T = new Taxi("AAA", 001,"BBB");
+        System.out.println(A.getName());
+        System.out.println(T.getName());
 
     }
 }
