@@ -27,5 +27,7 @@ public class Basic {
         System.out.println(str1 == str2);
         String str3 ="Hello";
         System.out.println(str1 == str3);
+        String str4 = "He"+"llo";
+        System.out.println(str1 == str4);
     }
 }
