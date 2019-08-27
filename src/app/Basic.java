@@ -1,6 +1,6 @@
 package app;
 
-public class App {
+public class Basic {
     public static void main(String[] args) throws Exception {
         boolean mboolean =true;
         Byte mByte =100;
@@ -18,6 +18,9 @@ public class App {
             System.out.print(mLong);
         }
     }
+    //str1 會在String池建立"Hello"這個實例 為常量
+    //str3 會在String池找"Hello"這個實例，所以str1與str3指向同個實例
+    //new string則是建一個新的實例，非常量不會存在String池
     public static void Str() {
         String str1 = "Hello";
         String str2 = new String("Hello");
